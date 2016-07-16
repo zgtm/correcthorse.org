@@ -63,7 +63,7 @@
             </p>
             <p class="control">
               <label class="checkbox">
-                <input type="checkbox" id="upchar">
+                <input type="checkbox" id="spaces" checked="checked">
                 Show spaces between words
               </label>
             </p>
@@ -101,9 +101,20 @@
 
           var password = "";
 
-          for (var i = 0; i < 4; i++) {
-              password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
+          var num = document.getElementById("numwords").value;
+          for (var i = 0; i < num; i++) {
+              var word = wordlist[Math.floor(Math.random() * wordlist.length)];
+              if (document.getElementById("upchar").checked))
+                  word = word.charAt(0).toUpperCase() + word.slice(1);
+              password += 
+              if (document.getElementById("spaces").checked)
+                  password += " ";
           }
+          if (document.getElementById("spchar").checked))
+              password += ".";
+
+          if (document.getElementById("number").checked))
+              password += "0";
 
           document.getElementById("password").value = password;
       }
