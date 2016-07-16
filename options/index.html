@@ -104,16 +104,16 @@
           var num = document.getElementById("numwords").value;
           for (var i = 0; i < num; i++) {
               var word = wordlist[Math.floor(Math.random() * wordlist.length)];
-              if (document.getElementById("upchar").checked))
+              if (document.getElementById("upchar").checked)
                   word = word.charAt(0).toUpperCase() + word.slice(1);
               password += 
               if (document.getElementById("spaces").checked)
                   password += " ";
           }
-          if (document.getElementById("spchar").checked))
+          if (document.getElementById("spchar").checked)
               password += ".";
 
-          if (document.getElementById("number").checked))
+          if (document.getElementById("number").checked)
               password += "0";
 
           document.getElementById("password").value = password;
