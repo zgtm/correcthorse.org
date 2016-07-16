@@ -2,31 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Correct Horse .org – Password generator</title>
-    
+    <title>title</title>
     <link rel="stylesheet" href="/css/bulma.css">
     <link rel="stylesheet" href="/css/ch.css">
   </head>
   <body>
 
-    
 
+    
     <section class="hero is-info is-bold">
       <div class="hero-head">
         <div class="container">
           <nav class="nav">
             <div class="columns">
               <div class="column">
-                <div class="nav-center nav-menu"><a class="nav-item" href="">Home</a>
-                  <a class="nav-item" href="cp/">Compact</a>
-                  <a class="nav-item" href="options/">More options</a></div></div>
-              <div class="column">
-                <div class="nav-center nav-menu"><a class="nav-item" href="/en/">English</a>
-                  <a class="nav-item" href="/de/">Deutsch</a>
-                  <a class="nav-item" href="/fr/">Français</a>
-                  <a class="nav-item" href="/nl/">Nederlands</a></div></div>
-              <div class="column">
-                <div class="nav-right nav-menu"><a class="nav-item" href="/about/">About</a></div></div>
+                <div class="nav-center nav-menu"><a class="nav-item" href="../">Back</a></div>
+              </div>
             </div>
           </nav>
         </div>
@@ -38,16 +29,11 @@
               <h1 class="title is-1">Correct Horse<span style="font-size:large"> .org</span></h1>
               <h2 class="subtitle is-3">Passwords done right</h2>
             </div>
-            <div class="column is-narrow">
-              <div class="box">
-                <img src="/img/small.png">
-              </div>
-            </div>
           </div>
         </div>
       </header>
     </section>
-
+    
     
     
     <section class="section">
@@ -63,9 +49,6 @@
             <p class="control">
               <input class="input is-medium is-success" type="text" placeholder="" id="password">
             </p>
-            <p>
-              I want more <a href="options/">options …</a>
-            </p>
           </div>
           <div class="column">
             <p>The password is generated from the following words:</p>
@@ -79,136 +62,6 @@
     </section>
 
     
-    
-    <section class="section">
-      <div class="container">        
-        <h1 class="title">Why is this a good password?</h1>
-        <h2 class="subtitle">What makes a good password?</h2>
-        <hr>
-        <div class="content">
-          <p>The password above contains 52 bits of entropy. This means, it is as random as the result of throwing 52 coins in a row. The reason for that is because every word has been randomly selected from a list of over 8192 distinct words—corresponding to an entropy of 13 bits.</p>
-          <p>That means, it is as random, as a completely random password of length 8 generated from uppercase letters, lowercase letters and numbers. <strong>However</strong> it is much more memorable than a complete random password of 8 characters. Or as Randal Munroe puts it:</p>
-          <div class="container" style="width:780px; margin-top:20px; margin-bottom:20px;">
-            <div class="box" >
-              <article class="media">
-                <div class="media-content">
-                  <figure class="image">
-                    <img src="https://imgs.xkcd.com/comics/password_strength.png" style="width:740px;">
-                  </figure>
-                </div>
-              </article>
-            </div>
-          </div>
-          <p>This is taken from Randall Munroes famous carton <a href="https://xkcd.com/">XKCD (xkcd.com)</a>.</p>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="section">
-      <div class="container">        
-        <h1 class="title">Why can I trust this page …</h1>
-        <h2 class="subtitle"> … with something such important as my passwort?</h2>
-        <hr>
-        <div class="content">
-          <p>Short answer: You shouldn't. You shouldn't trust <strong>any</strong> website with that.</p>
-          <!--p>The longer answer is:</p-->
-          <p>However, this page is made as simple as possible (from the code point of view).
-            So you can convince yourself that</p>
-          <ul>
-            <li>the password is generated completely random (as far as your browser implements Math.random())</li>
-            <li>the password is not send to the server</li>
-            <li>nothing else is done except for the password generation</li>
-          </ul>
-          <p>Because the password is never sent to any server, also nobody in between could have read the password above (except from the coworker standing behind you). In order to make sure, that also this web page has not been modified at all, you should check that you connected this website securely via https and the connection is using a trusted certificate.</p>
-          <p>By viewing the source of this website, you can see that the only code inserted (at the bottom of the page) is the snippet you can see below. There is no JS-Framework use, no ads are embedded, neither is google analyics, there is no facebook-botton, nothing. Feel free to share this page on facebook anyway! :) </p>
-        </div>
-
-        <div class="box" >
-          <article class="media">
-            <div class="media-content">
-              <figure class="highlight">
-                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>    
-    <span class="na">function</span> generatePassword() {
-        <span class="na">var</span> wordlist = <span class="na">document</span>.getElementById("wordlist").value.split(" ");
-
-        <span class="na">var</span> password = "";
-        <span class="na">for</span> (<span class="na">var</span> i = 0; i &lt; 4; i++) {
-            password += wordlist[<span class="na">Math</span>.floor(<span class="na">Math</span>.random() * wordlist.length)] + " ";
-        }
-
-        <span class="na">document</span>.getElementById("password").value = password;
-    }
-
-    generatePassword();
-<span class="nt">&lt;/script&gt;</span></code></pre>
-              </figure>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section">
-      <div class="container">        
-        <h1 class="title">Which words are used?</h1>
-        <h2 class="subtitle">Can I download the wordlists?</h2>
-        <hr>
-        <div class="content">
-          <p>The wordlists used can be downloaded here:</p>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <p>English: <a href="words/english.txt">english.txt</a></p>
-            <p>8861 words</p><p>MD5: cdc20e6fe19c26fe44403d2e9f3c213c</p><p>SHA1: 4099869628b6b18ee52319db6588ec68f54d6a2b</p>
-          </div>
-          <div class="column">
-            Deutsch / German: <a href="words/german.txt">german.txt</a>
-            <p>9353 words</p><p>MD5: 089a7f1d15f54bfd574b7c0e3e735a9d</p><p>SHA1: 5aadf36486bbb5156aa3d0980a7d2786fcdde8f2</p>
-          </div>
-          </div>
-          <div class="columns">
-          <div class="column">
-            Français / French: <a href="words/french.txt">french.txt</a>
-            <p>8377 words</p><p>MD5: 6f14bcbf6d62619f9ce4e0ba027e545b</p><p>SHA1: 87d292a813353a93c54ed0a9a0658170a802c0a2</p>
-          </div>
-          <div class="column">
-            Nederlands / Netherlands: <a href="words/netherlands.txt">netherlands.txt</a>
-            <p>9192 words</p><p>MD5: b976733df4653155a506f07c9a54d6d6</p><p>SHA1: c5e60dbcc0dd51025418d8be3926c80d33f71226</p>
-          </div>
-        </div>
-        <hr>
-        <div class="content">
-          <p>These wordlists are taken from the <a href="http://wortschatz.uni-leipzig.de/html/wliste.html">Wortschatz project</a> of the Leipzig university, Germany. They are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a> according to <a href="http://wortschatz.uni-leipzig.de/use.html">the Wortschatz terms of usage.</a>
-          Words containing anything else but letters have been filtered out. Also, the lists have been converted to full lowercase.</p>
-          <p>You can use these files to generate your password locally. If you are using linux, you can just invoke the following command (replacing &lt;file&gt; with the actual file):</p>
-        </div>
-        <div class="box" >
-          <article class="media">
-            <div class="media-content">
-              <figure class="highlight">
-                <pre><code class="language-bash" data-lang="bash">shuf -n 4 &lt;file&gt; | tr '\n' ' '</code></pre>
-              </figure>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    
-
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>            
-          </p>
-        </div>
-      </div>
-    </footer>
-    
-
 
     <script>
       function generatePassword() {
