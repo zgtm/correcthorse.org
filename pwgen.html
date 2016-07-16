@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/ch.css">
+  </head>
+  <body>
+
+
+    
+    <header class="header">
+      <div class="container">
+        <h1 class="title is-1">Correct Horse</h1>
+        <h2 class="subtitle is-3">Passwords done right</h2>
+      </div>
+    </header>
+
+    
+    
+    <section class="section">
+      <div class="container">        
+        <div class="heading">
+          <h1 class="title">Your Correct Horse password</h1>
+          <h2 class="subtitle">Generate a new one by clicking the button</h2>
+        </div>
+        <hr>
+        <div class="columns">
+          <div class="column">
+            <p class="control">
+               <button class="button is-primary is-medium" onclick="generatePassword();">Generate</button>
+            </p>
+            <p class="control">
+              <input class="input is-medium" type="text" placeholder="" id="password">
+            </p>
+          </div>
+          <div class="column">
+            <p>The password is generated from the following words:</p>
+            <p class="control">
+              <textarea class="textarea" placeholder="" id="wordlist">a b c d</textarea>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="section">
+      <div class="container">        
+        <div class="heading">
+          <h1 class="title">Why is this a good password?</h1>
+          <h2 class="subtitle">What makes a good password?</h2>
+        </div>
+        <hr>
+        <div class="content">
+          <p>The password above contains 52 bits of entropy. This is because every word has been randomly selected from a list of over 8192 distinct words—corresponding to an entropy of 13 bits.</p>
+          <p>That means, it is as random, as a completely random password of length 8 generated from uppercase letters, lowercase letters and numbers.</p>
+          <p><strong>But</strong> it is much more memorable than a complete random password of 8 characters. Or to put it as Randal Munroe:</p>
+          <div class="container" style="width:780px; margin-top:20px; margin-bottom:20px;">
+            <div class="box" >
+              <article class="media">
+                <div class="media-content">
+                  <figure class="image">
+                    <img src="https://imgs.xkcd.com/comics/password_strength.png" style="width:740px;">
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container">        
+        <div class="heading">
+          <h1 class="title">Why can I trust this page</h1>
+          <h2 class="subtitle">with something such important as my passwort?</h2>
+        </div>        
+        <hr>
+        <div class="content">
+          <p>Short answer: You shouldn't. You shouldn't trust <strong>any</strong> website with that.</p>
+          <!--p>The longer answer is:</p-->
+          <p>However, this page is made as simple as possible (from the code point of view).
+            So you can convince yourself that</p>
+          <ul>
+            <li>the password is generated completely random (as far as your browser implements Math.random())</li>
+            <li>the password is not send to the server</li>
+            <li>nothing else is done except for the password generation</li>
+          </ul>
+          <p>By viewing the source of this website, you can see that the only code inserted (at the bottom of the page) is the snippet you can see below:</p>
+        </div>
+
+        <div class="box" >
+          <article class="media">
+            <div class="media-content">
+              <figure class="highlight">
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>    
+    <span class="na">function</span> generatePassword() {
+        <span class="na">var</span> wordlist = <span class="na">document</span>.getElementById("wordlist").value.split(" ");
+
+        <span class="na">var</span> password = "";
+        <span class="na">for</span> (<span class="na">var</span> i = 0; i &lt; 4; i++) {
+            password += wordlist[<span class="na">Math</span>.floor(<span class="na">Math</span>.random() * wordlist.length)] + " ";
+        }
+
+        <span class="na">document</span>.getElementById("password").value = password;
+    }
+
+    generatePassword();
+<span class="nt">&lt;/script&gt;</span></code></pre>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p> Note:
+            
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script>
+      function generatePassword() {
+          var wordlist = document.getElementById("wordlist").value.split(" ");
+
+          var password = "";
+
+          for (var i = 0; i < 4; i++) {
+              password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
+          }
+
+          document.getElementById("password").value = password;
+      }
+
+      generatePassword();
+    </script>
+
+    
+    
+  </body>
+</html>
