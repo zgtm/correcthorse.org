@@ -8,4 +8,6 @@ Wortlisten von http://wortschatz.uni-leipzig.de/html/wliste.html
 behandelt mit
 
     iconv -t UTF-8 -f ISO-8859-15 
-    grep '^[^ 1-9]\{5\}[^ 1-9]*$' 
+    # grep '^[^ 1-9]\{5\}[^ 1-9]*$' 
+    grep "^[^ 1-9\.\'-][^ 1-9A-Z\.\'-]\{3\}[^ 1-9A-Z\.\'-]*$"
+    tr '[A-ZÄÖÜ]' '[a-zäöü]'
