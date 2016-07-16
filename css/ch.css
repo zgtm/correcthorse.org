@@ -6,3 +6,8 @@ padding-bottom:20px;
 div.nav-center.nav-menu {
     top:0px;
 }
+
+#password {
+    color: #97cd76;
+    font-weight: bold;
+}
