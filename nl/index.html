@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Correct Horse .org – Password generator</title>
-    <link rel="stylesheet" href="/css/bulma.css">
-    <link rel="stylesheet" href="/css/ch.css">
+    <title>CorrectHorse.org – Online Password Generator</title>
+    <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/ch.css">
   </head>
   <body>
 
-    
+
 
     <section class="hero is-info is-bold">
       <div class="hero-head">
@@ -16,16 +16,26 @@
           <nav class="nav">
             <div class="columns">
               <div class="column">
-                <div class="nav-center nav-menu"><a class="nav-item" href="">Home</a>
+                <div class="nav-center nav-menu">
+                  <span class="nav-item">Home</span>
                   <a class="nav-item" href="cp/">Compact</a>
-                  <a class="nav-item" href="options/">More options</a></div></div>
+                  <a class="nav-item" href="options/">More options</a>
+                </div>
+              </div>
               <div class="column">
-                <div class="nav-center nav-menu"><a class="nav-item" href="/">English</a>
-                  <a class="nav-item" href="/de/">Deutsch</a>
-                  <a class="nav-item" href="/fr/">Français</a>
-                  <a class="nav-item" href="/nl/">Nederlands</a></div></div>
+                <div class="nav-center nav-menu">
+                  <a class="nav-item" href="../">English</a>
+                  <a class="nav-item" href="../de/">Deutsch</a>
+                  <a class="nav-item" href="../fr/">Français</a>
+                  <span class="nav-item">Nederlands</span>
+                </div>
+              </div>
               <div class="column">
-                <div class="nav-right nav-menu"><a class="nav-item" href="/about/">About</a></div></div>
+                <div class="nav-right nav-menu">
+                  <a class="nav-item" href="../download/">Download</a>
+                  <a class="nav-item" href="../about/">About</a>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
@@ -39,7 +49,7 @@
             </div>
             <div class="column is-narrow">
               <div class="box">
-                <img src="/img/small.png">
+                <img src="../img/small.png">
               </div>
             </div>
           </div>
@@ -47,10 +57,10 @@
       </header>
     </section>
 
-    
-    
+
+
     <section class="section">
-      <div class="container">        
+      <div class="container">
         <h1 class="title">Your Correct Horse password</h1>
         <h2 class="subtitle">Generate a new one by clicking the button</h2>
         <hr>
@@ -77,10 +87,10 @@
       </div>
     </section>
 
-    
-    
+
+
     <section class="section">
-      <div class="container">        
+      <div class="container">
         <h1 class="title">Why is this a good password?</h1>
         <h2 class="subtitle">What makes a good password?</h2>
         <hr>
@@ -92,7 +102,7 @@
               <article class="media">
                 <div class="media-content">
                   <figure class="image">
-                    <img src="https://imgs.xkcd.com/comics/password_strength.png" style="width:740px;">
+                    <img src="../img/password_strength.png" style="width:740px;">
                   </figure>
                 </div>
               </article>
@@ -103,9 +113,9 @@
       </div>
     </section>
 
-    
+
     <section class="section">
-      <div class="container">        
+      <div class="container">
         <h1 class="title">Why can I trust this page …</h1>
         <h2 class="subtitle"> … with something such important as my passwort?</h2>
         <hr>
@@ -127,7 +137,7 @@
           <article class="media">
             <div class="media-content">
               <figure class="highlight">
-                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>    
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
     <span class="na">function</span> generatePassword() {
         <span class="na">var</span> wordlist = <span class="na">document</span>.getElementById("wordlist").value.split(" ");
 
@@ -151,7 +161,7 @@
 
 
     <section class="section">
-      <div class="container">        
+      <div class="container">
         <h1 class="title">Which words are used?</h1>
         <h2 class="subtitle">Can I download the wordlists?</h2>
         <hr>
@@ -160,21 +170,21 @@
         </div>
         <div class="columns">
           <div class="column">
-            <p>English: <a href="words/english.txt">english.txt</a></p>
+            <p>English: <a href="../words/english.txt">english.txt</a></p>
             <p>8861 words</p><p>MD5: cdc20e6fe19c26fe44403d2e9f3c213c</p><p>SHA1: 4099869628b6b18ee52319db6588ec68f54d6a2b</p>
           </div>
           <div class="column">
-            Deutsch / German: <a href="words/german.txt">german.txt</a>
+            Deutsch / German: <a href="../words/german.txt">german.txt</a>
             <p>9353 words</p><p>MD5: 089a7f1d15f54bfd574b7c0e3e735a9d</p><p>SHA1: 5aadf36486bbb5156aa3d0980a7d2786fcdde8f2</p>
           </div>
           </div>
           <div class="columns">
           <div class="column">
-            Français / French: <a href="words/french.txt">french.txt</a>
+            Français / French: <a href="../words/french.txt">french.txt</a>
             <p>8377 words</p><p>MD5: 6f14bcbf6d62619f9ce4e0ba027e545b</p><p>SHA1: 87d292a813353a93c54ed0a9a0658170a802c0a2</p>
           </div>
           <div class="column">
-            Nederlands / Netherlands: <a href="words/netherlands.txt">netherlands.txt</a>
+            Nederlands / Netherlands: <a href="../words/netherlands.txt">netherlands.txt</a>
             <p>9192 words</p><p>MD5: b976733df4653155a506f07c9a54d6d6</p><p>SHA1: c5e60dbcc0dd51025418d8be3926c80d33f71226</p>
           </div>
         </div>
@@ -196,7 +206,7 @@
       </div>
     </section>
 
-    
+
 
     <footer class="footer">
       <div class="container">
@@ -206,7 +216,7 @@
         </div>
       </div>
     </footer>
-    
+
 
 
     <script>
@@ -225,7 +235,7 @@
       generatePassword();
     </script>
 
-    
-    
+
+
   </body>
 </html>
