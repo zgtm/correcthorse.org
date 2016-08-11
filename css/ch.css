@@ -1,0 +1,14 @@
+header {
+padding-top:20px;
+padding-bottom:20px;
+}
+
+div.nav-center.nav-menu {
+    top:0px;
+}
+
+#password {
+    /*color: #97cd76;*/
+    color: #42afe3;
+    font-weight: bold;
+}
