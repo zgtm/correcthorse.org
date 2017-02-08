@@ -1,9 +1,9 @@
 Wortlisten von http://wortschatz.uni-leipzig.de/html/wliste.html
 
-    http://wortschatz.uni-leipzig.de/Papers/top10000de.txt
-    http://wortschatz.uni-leipzig.de/Papers/top10000en.txt
-    http://wortschatz.uni-leipzig.de/Papers/top10000fr.txt
-    http://wortschatz.uni-leipzig.de/Papers/top10000nl.txt
+ - http://wortschatz.uni-leipzig.de/Papers/top10000de.txt
+ - http://wortschatz.uni-leipzig.de/Papers/top10000en.txt
+ - http://wortschatz.uni-leipzig.de/Papers/top10000fr.txt
+ - http://wortschatz.uni-leipzig.de/Papers/top10000nl.txt
 
 behandelt mit
 
