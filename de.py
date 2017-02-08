@@ -1,4 +1,4 @@
-{
+strings = {
     'title': 'Online Passwortgenerator',
     'home': 'Normale Version',
     'compact': 'Kompakte Version',
@@ -8,7 +8,7 @@
     'title_your_password': 'Dein Correct-Horse-Password',
     'subtitle_generate_password': 'Klicke auf den Button um ein neues zu erzeugen',
     'generate': 'Neues erzeugen',
-    'want_more_options': 'Ich brauche mehr <a href="options/">Einstellungen …</a>',
+    'want_more_options': 'Ich brauche <a href="options/">mehr Einstellungen …</a>',
     'generator_words':  'Das Passwort wird aus den folgenden Wörtern gebildet:',
     'title_good_password': 'Why is this a good password?',
     'subtitle_good_password': 'What makes a good password?',
@@ -58,5 +58,11 @@ Kleinschreibung umgewandelt..</p>
 <p>Die Wortlisten können auch verwendet werden, um sich auf dem eigenen Rechner
 selbst ein Passwort zu erzeugen. Unter Linux kann das folgenden Kommando dafür
 benutzt werden (&lt;file&gt; durch die entsprechende Datei ersetzen):</p>''',
+    'option_numberwords': 'Anzahl Wörter', 
+    'option_showspaces': 'Trenne Wörter mit Leerzeichen',
+    'options_need': 'Ich brauche:', 
+    'options_uppercase': 'Großbuchstaben', 
+    'options_number': 'Mindestens eine Ziffer',
+    'options_specialcharacter': 'Mindestens ein Sonderzeichen',
 }
 

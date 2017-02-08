@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Correct Horse Password Generator</title>
-    <link rel="stylesheet" href="../../css/bulma.css">
-    <link rel="stylesheet" href="../../css/ch.css">
-    <style>::-webkit-scrollbar { display: none; } </style>
+    <title>CorrectHorse.org – Online Password Generator</title>
+    <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/ch.css">
   </head>
   <body>
+
 
 
 
@@ -18,21 +18,22 @@
             <div class="columns">
               <div class="column">
                 <div class="nav-center nav-menu">
-                  <a class="nav-item" href="../">Informations</a>
-                  <a class="nav-item" href="../cp/">Compact</a>
+                  <a class="nav-item" href="index.html">Home</a>
+                  <span class="nav-item">Compact</span>
+                  <a class="nav-item" href="options.html">More options</a>
                 </div>
               </div>
               <div class="column">
                 <div class="nav-center nav-menu">
-                  <a class="nav-item" href="../../options/">English</a>
-                  <a class="nav-item" href="../../de/options/">Deutsch</a>
-                  <a class="nav-item" href="../../fr/options/">Français</a>
+                  <a class="nav-item" href="../en/compact.html">English</a>
+                  <a class="nav-item" href="../de/compact.html">Deutsch</a>
+                  <a class="nav-item" href="../fr/compact.html">Français</a>
                   <span class="nav-item">Nederlands</span>
                 </div>
               </div>
               <div class="column">
                 <div class="nav-right nav-menu">
-                  <a class="nav-item" href="../../about/">About</a>
+                  <a class="nav-item" href="../about.html">About</a>
                 </div>
               </div>
             </div>
@@ -50,7 +51,6 @@
         </div>
       </header>
     </section>
-
 
 
     <section class="section">
@@ -74,72 +74,27 @@
             </p>
           </div>
         </div>
-        <div class="columns">
-          <div class="column">
-            <p class="control has-icon has-icon-right">
-              <input class="input" size="5" type="number" value="4" name="quantity" min="1" max="10" id="numwords"> Words
-            </p>
-            <p class="control">
-              <label class="checkbox">
-                <input type="checkbox" id="spaces" checked="checked">
-                Show spaces between words
-              </label>
-            </p>
-          </div>
-          <div class="column">
-            I need:
-            <p class="control">
-              <label class="checkbox">
-                <input type="checkbox" id="upchar">
-                Upper case letters
-              </label>
-            </p>
-            <p class="control">
-              <label class="checkbox">
-                <input type="checkbox" id="number">
-                At least one number
-              </label>
-            </p>
-            <p class="control">
-              <label class="checkbox">
-                <input type="checkbox" id="spchar">
-                At least one special character
-              </label>
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
 
 
+    
     <script>
       function generatePassword() {
           var wordlist = document.getElementById("wordlist").value.split(" ");
 
           var password = "";
 
-          var num = document.getElementById("numwords").value;
-          for (var i = 0; i < num; i++) {
-              var word = wordlist[Math.floor(Math.random() * wordlist.length)];
-              if (document.getElementById("upchar").checked)
-                  word = word.charAt(0).toUpperCase() + word.slice(1);
-              password += word;
-              if (document.getElementById("spaces").checked)
-                  password += " ";
+          for (var i = 0; i < 4; i++) {
+              password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
           }
-          if (document.getElementById("spchar").checked)
-              password += ".";
-
-          if (document.getElementById("number").checked)
-              password += "0";
 
           document.getElementById("password").value = password;
       }
 
       generatePassword();
     </script>
-
 
 
   </body>

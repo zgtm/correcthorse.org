@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Correct Horse Password Generator</title>
-    <link rel="stylesheet" href="../../css/bulma.css">
-    <link rel="stylesheet" href="../../css/ch.css">
-    <style>::-webkit-scrollbar { display: none; } </style>
+    <title>CorrectHorse.org – Online Password Generator</title>
+    <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/ch.css">
   </head>
   <body>
+
 
 
 
@@ -18,21 +18,22 @@
             <div class="columns">
               <div class="column">
                 <div class="nav-center nav-menu">
-                  <a class="nav-item" href="../">Informations</a>
-                  <a class="nav-item" href="../cp/">Compact</a>
+                  <a class="nav-item" href="index.html">Home</a>
+                  <a class="nav-item" href="compact.html">Compact</a>
+                  <span class="nav-item">More options</span>
                 </div>
               </div>
               <div class="column">
                 <div class="nav-center nav-menu">
-                  <a class="nav-item" href="../../options/">English</a>
-                  <a class="nav-item" href="../../de/options/">Deutsch</a>
+                  <a class="nav-item" href="../en/options.html">English</a>
+                  <a class="nav-item" href="../de/options.html">Deutsch</a>
                   <span class="nav-item">Français</span>
-                  <a class="nav-item" href="../../nl/options/">Nederlands</a>
+                  <a class="nav-item" href="../nl/options.html">Nederlands</a>
                 </div>
               </div>
               <div class="column">
                 <div class="nav-right nav-menu">
-                  <a class="nav-item" href="../../about/">About</a>
+                  <a class="nav-item" href="../about.html">About</a>
                 </div>
               </div>
             </div>
@@ -46,11 +47,15 @@
               <h1 class="title is-1">Correct Horse<span style="font-size:large"> .org</span></h1>
               <h2 class="subtitle is-3">Passwords done right</h2>
             </div>
+            <div class="column is-narrow">
+              <div class="box">
+                <img src="../img/small.png">
+              </div>
+            </div>
           </div>
         </div>
       </header>
     </section>
-
 
 
     <section class="section">
@@ -76,12 +81,13 @@
         </div>
         <div class="columns">
           <div class="column">
-            <p class="control has-icon has-icon-right">
-              <input class="input" size="5" type="number" value="4" name="quantity" min="1" max="10" id="numwords"> Words
+            <label class="label">Number of words</label>
+            <p class="control">
+              <input class="input" size="5" type="number" value="4" name="quantity" min="1" max="10" id="numwords" onchange="generatePassword();">
             </p>
             <p class="control">
               <label class="checkbox">
-                <input type="checkbox" id="spaces" checked="checked">
+                <input type="checkbox" id="spaces" checked="checked" onchange="generatePassword();">
                 Show spaces between words
               </label>
             </p>
@@ -90,19 +96,19 @@
             I need:
             <p class="control">
               <label class="checkbox">
-                <input type="checkbox" id="upchar">
+                <input type="checkbox" id="upchar" onchange="generatePassword();">
                 Upper case letters
               </label>
             </p>
             <p class="control">
               <label class="checkbox">
-                <input type="checkbox" id="number">
+                <input type="checkbox" id="number" onchange="generatePassword();">
                 At least one number
               </label>
             </p>
             <p class="control">
               <label class="checkbox">
-                <input type="checkbox" id="spchar">
+                <input type="checkbox" id="spchar" onchange="generatePassword();">
                 At least one special character
               </label>
             </p>
@@ -113,6 +119,7 @@
 
 
 
+    
     <script>
       function generatePassword() {
           var wordlist = document.getElementById("wordlist").value.split(" ");
@@ -139,7 +146,6 @@
 
       generatePassword();
     </script>
-
 
 
   </body>

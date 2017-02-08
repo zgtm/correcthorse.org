@@ -1,4 +1,4 @@
-{
+strings = {
     'title': 'Online Password Generator',
     'home': 'Home',
     'compact': 'Compact',
@@ -8,7 +8,7 @@
     'title_your_password': 'Your Correct Horse password',
     'subtitle_generate_password': 'Generate a new one by clicking the button',
     'generate': 'Generate',
-    'want_more_options': 'I want more <a href="options/">options …</a>',
+    'want_more_options': 'I want <a href="options/">more options …</a>',
     'generator_words':  'The password is generated from the following words:',
     'title_good_password': 'Why is this a good password?',
     'subtitle_good_password': 'What makes a good password?',
@@ -57,5 +57,11 @@ filtered out. Also, the lists have been converted to full lowercase.</p>
 <p>You can use these files to generate your password locally. If you are using
 linux, you can just invoke the following command (replacing &lt;file&gt; with
 the actual file):</p>''',
+    'option_numberwords': 'Number of words', 
+    'option_showspaces': 'Show spaces between words',
+    'options_need': 'I need:', 
+    'options_uppercase': 'Upper case letters', 
+    'options_number': 'At least one number',
+    'options_specialcharacter': 'At least one special character',
 }
 
