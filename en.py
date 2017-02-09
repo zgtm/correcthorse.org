@@ -8,7 +8,7 @@ strings = {
     'title_your_password': 'Your Correct Horse password',
     'subtitle_generate_password': 'Generate a new one by clicking the button',
     'generate': 'Generate',
-    'want_more_options': 'I want <a href="options/">more options …</a>',
+    'want_more_options': 'I want <a href="options.html">more options …</a>',
     'generator_words':  'The password is generated from the following words:',
     'title_good_password': 'Why is this a good password?',
     'subtitle_good_password': 'What makes a good password?',
