@@ -12,3 +12,8 @@ div.nav-center.nav-menu {
     color: #42afe3;
     font-weight: bold;
 }
+
+.section {
+    max-width: 900px;
+    margin: auto;
+}
