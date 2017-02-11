@@ -1,6 +1,6 @@
 header {
-padding-top:20px;
-padding-bottom:20px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 div.nav-center.nav-menu {
@@ -8,7 +8,6 @@ div.nav-center.nav-menu {
 }
 
 #password {
-    /*color: #97cd76;*/
     color: #42afe3;
     font-weight: bold;
 }
