@@ -1,4 +1,5 @@
 strings = {
+    'lang': 'en',
     'title': 'Online Password Generator',
     'home': 'Home',
     'compact': 'Compact',
