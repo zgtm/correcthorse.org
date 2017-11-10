@@ -26,7 +26,7 @@ strings = {
     'reference_xkcd':
       '''<p>
       This is taken from Randall Munroes famous carton
-      <a href="https://xkcd.com/">XKCD (xkcd.com).</a>
+      <a href="https://xkcd.com/">XKCD (xkcd.com)</a>.
       </p>''',
     'title_trust': 'Why can I trust this page …',
     'subtitle_trust': ' … with something such important as my passwort?',
@@ -71,7 +71,7 @@ strings = {
       They are licensed under
       <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a>
       according to the
-      <a href="http://wortschatz.uni-leipzig.de/use.html">Wortschatz terms of usage.</a>
+      <a href="http://wortschatz.uni-leipzig.de/use.html">Wortschatz terms of usage</a>.
       Words containing anything else but letters have been filtered out.
       Also, the lists have been converted to full lowercase.
       </p>

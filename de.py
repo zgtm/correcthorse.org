@@ -25,7 +25,7 @@ strings = {
     'reference_xkcd':
       '''<p>
       Von Randall Munroes berühmtem Webcartoon
-      <a href="https://xkcd.com/">XKCD (xkcd.com).</a>
+      <a href="https://xkcd.com/">XKCD (xkcd.com)</a>.
       </p>''',
     'title_trust': 'Warum kann ich dieser Seite vertrauen …',
     'subtitle_trust': ' … mit so etwas Wichtigem wie meinem Passwort?',

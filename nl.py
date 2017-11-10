@@ -26,7 +26,7 @@ strings = {
     'reference_xkcd':
       '''<p>
       Deze is afkomstig uit Randall Munroes beroemde doos
-      <a href="https://xkcd.com/">XKCD (xkcd.com).</a>
+      <a href="https://xkcd.com/">XKCD (xkcd.com)</a>.
       </p>''',
     'title_trust': 'Waarom kan ik deze pagina vertrouwen …',
     'subtitle_trust': ' … met iets belangrijks als mijn wachtwoord?',
@@ -69,7 +69,7 @@ strings = {
       Ze zijn onder
       <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a>
       in licentie volgens de
-      <a href="http://wortschatz.uni-leipzig.de/use.html">Wortschatz gebruiksvoorwaarden.</a>
+      <a href="http://wortschatz.uni-leipzig.de/use.html">Wortschatz gebruiksvoorwaarden</a>.
       Woorden die iets anders bevatten dan letters zijn uitgefilterd.
       Ook zijn de lijsten omgezet naar volledige kleine letters.
       </p>
@@ -86,10 +86,11 @@ strings = {
     'options_specialcharacter': 'Ten minste één speciaal teken',
     'translation_hint':
       '''<p>
-      This pages has been translated automatically using the
-      <a href="https://www.deepl.com/translator">DeepL translator.</a>
-      If you find mistakes, do not hesitate to fix them in the
-      <a href="https://github.com/zgtm/correcthorse.org/blob/master/nl.py">Github repository.</a>
+      Deze pagina's zijn automatisch vertaald met behulp van de
+      <a href="https://www.deepl.com/translator">DeepL vertaler</a>.
+       Als u fouten ontdekt, aarzel dan niet om ze in de
+      <a href="https://github.com/zgtm/correcthorse.org/blob/master/nl.py">Github-repository</a>
+      op te lossen.
       </p>''',
 }
 

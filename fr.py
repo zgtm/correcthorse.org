@@ -69,7 +69,7 @@ strings = {
       Ils sont sous licence
       <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a>
       selon les
-      <a href="http://wortschatz.uni-leipzig.de/use.html">conditions d'utilisation de Wortschatz.</a>
+      <a href="http://wortschatz.uni-leipzig.de/use.html">conditions d'utilisation de Wortschatz</a>.
       Les mots contenant autre chose que des lettres ont été filtrés.
       De plus, les listes ont été converties en minuscules.
       </p>
@@ -86,10 +86,10 @@ strings = {
     'options_specialcharacter': 'Au moins un caractère spécial',
     'translation_hint':
       '''<p>
-      This pages has been translated automatically using the
-      <a href="https://www.deepl.com/translator">DeepL translator</a>.
-      If you find mistakes, do not hesitate to fix them in the
-      <a href="https://github.com/zgtm/correcthorse.org/blob/master/fr.py">Github repository</a>.
+      Ces pages ont été traduites automatiquement à l'aide du
+      <a href="https://www.deepl.com/translator">traducteur DeepL</a>.
+       Si vous trouvez des erreurs, n'hésitez pas à les corriger dans le
+      <a href="https://github.com/zgtm/correcthorse.org/blob/master/fr.py">dépôt Github</a>.
       </p>'''
 }
 
