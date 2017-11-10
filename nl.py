@@ -1,67 +1,95 @@
 strings = {
     'title': 'Online Password Generator',
-    'home': 'Home',
+    'home': 'Thuis',
     'compact': 'Compact',
-    'more_options': 'More options',
-    'about': 'About',
-    'subtitle': 'Passwords done right', 
-    'title_your_password': 'Your Correct Horse password',
-    'subtitle_generate_password': 'Generate a new one by clicking the button',
-    'generate': 'Generate',
-    'want_more_options': 'I want <a href="options.html">more options …</a>',
-    'generator_words':  'The password is generated from the following words:',
-    'title_good_password': 'Why is this a good password?',
-    'subtitle_good_password': 'What makes a good password?',
-    'text_good_password': '''<p>The password above contains 52 bits of entropy.
-This means, it is as random as the result of throwing 52 coins in a 'row. The
-reason for that is because every word has been randomly selected from a list of
-over 8192 distinct words—corresponding to an entropy of 13 bits.</p>
-<p>That means, it is as random, as a completely random password of length 8
-generated from uppercase letters, lowercase letters and numbers.
-<strong>However</strong> it is much more memorable than a complete random
-password of 8 characters. Or as Randal Munroe puts it:</p>''',
-    'reference_xkcd': '''<p>This is taken from Randall Munroes famous carton
-<a href="https://xkcd.com/">XKCD (xkcd.com)</a>.</p>''',
-    'title_trust': 'Why can I trust this page …',
-    'subtitle_trust': ' … with something such important as my passwort?',
-    'text_trust': '''<p>Short answer: You shouldn't. You shouldn't trust
-<strong>any</strong> website with that.</p>
-<p>However, this page is made as simple as possible (from the code point of
-view). So you can convince yourself that</p>
-<ul>
-    <li>the password is generated completely random (as far as your browser
-    implements Math.random())</li>
-    <li>the password is not send to the server</li>
-    <li>nothing else is done except for the password generation</li>
-</ul>
-<p>Because the password is never sent to any server, also nobody in between
-could have read the password above (except from the coworker standing behind
-you). In order to make sure, that also this web page has not been modified at
-all, you should check that you connected this website securely via https and
-the connection is using a trusted certificate.</p>
-<p>By viewing the source of this website, you can see that the only code
-inserted (at the bottom of the page) is the snippet you can see below. There
-is no JS-Framework use, no ads are embedded, neither is google analyics,
-there is no facebook-botton, nothing. Feel free to share this page on facebook
-anyway! :) </p>''',
-    'title_wordlist': 'Which words are used?',
-    'subtitle_wordlist': 'Can I download the wordlists?',
-    'text_wordlist': '''<p>The wordlists used can be downloaded here:</p>''',
-    'reference_wordlist': '''<p>These wordlists are taken from the
-<a href="http://wortschatz.uni-leipzig.de/html/wliste.html">Wortschatz
-project</a> of the Leipzig university, Germany. They are licensed under
-<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a>
-according to <a href="http://wortschatz.uni-leipzig.de/use.html">the Wortschatz
-terms of usage.</a> Words containing anything else but letters have been
-filtered out. Also, the lists have been converted to full lowercase.</p>
-<p>You can use these files to generate your password locally. If you are using
-linux, you can just invoke the following command (replacing &lt;file&gt; with
-the actual file):</p>''',
-    'option_numberwords': 'Number of words', 
-    'option_showspaces': 'Show spaces between words',
-    'options_need': 'I need:', 
-    'options_uppercase': 'Upper case letters', 
-    'options_number': 'At least one number',
-    'options_specialcharacter': 'At least one special character',
+    'more_options': 'Meer opties',
+    'about': 'Over',
+    'subtitle': 'Wachtwoorden gedaan recht',
+    'title_your_password': 'Uw Correct-Horse wachtwoord',
+    'subtitle_generate_password': 'Een nieuw exemplaar genereren door op de knop te klikken',
+    'generate': 'Genereer',
+    'want_more_options': 'Ik wil <a href="options.html">meer opties …</a>',
+    'generator_words':  'Het wachtwoord wordt gegenereerd uit de volgende woorden:',
+    'title_good_password': 'Waarom is dit een goed wachtwoord?',
+    'subtitle_good_password': 'Wat maakt een goed wachtwoord?',
+    'text_good_password':
+      '''<p>
+      Het wachtwoord hierboven bevat 52 bits entropie.
+      Dit betekent dat het zo willekeurig is als het resultaat van het gooien van 52 munten in een' rij'.
+      De reden hiervoor is dat elk woord willekeurig is gekozen uit een lijst van meer dan 8192 verschillende woorden - corresponderend met een entropie van 13 bits.
+      </p>
+      <p>
+      Dat betekent dat het net zo willekeurig is als een willekeurig wachtwoord van lengte 8, dat wordt gegenereerd uit hoofdletters, kleine letters en cijfers.
+      Het is echter veel memorabeler dan een volledig willekeurig wachtwoord van 8 karakters.
+      Of zoals Randal Munroe het noemt:
+      </p>''',
+    'reference_xkcd':
+      '''<p>
+      Deze is afkomstig uit Randall Munroes beroemde doos
+      <a href="https://xkcd.com/">XKCD (xkcd.com).</a>
+      </p>''',
+    'title_trust': 'Waarom kan ik deze pagina vertrouwen …',
+    'subtitle_trust': ' … met iets belangrijks als mijn wachtwoord?',
+    'text_trust':
+      '''<p>
+      Korte antwoord:
+      Je zou niet moeten doen.
+      Je moet daar op geen enkele website mee vertrouwen.
+      </p>
+      <p>
+      Deze pagina is echter zo eenvoudig mogelijk (vanuit code-oogpunt).
+      Zo kunt u zich ervan overtuigen dat
+      </p>
+      <ul>
+        <li>het wachtwoord wordt volledig willekeurig gegenereerd (voor zover uw browser Math.random() implementeert)</li>
+        <li>het wachtwoord wordt niet naar de server verzonden</li>
+        <li>er wordt niets anders gedaan, behalve het genereren van een wachtwoord</li>
+      </ul>
+      <p>
+      Omdat het wachtwoord nooit naar een server wordt gestuurd, kon ook niemand daartussenin het wachtwoord boven lezen
+      (behalve van de collega die achter u staat).
+      Om er zeker van te zijn dat ook deze webpagina helemaal niet is gewijzigd, dient u te controleren of u deze website veilig via https heeft verbonden en de verbinding gebruik maakt van een betrouwbaar certificaat.
+      </p>
+      <p>
+      Door de bron van deze website te bekijken, kunt u zien dat de enige code die onderaan de pagina is ingevoerd, het fragment is dat u hieronder kunt zien.
+      Er is geen JS-Framework gebruik, geen advertenties zijn ingebed, noch is google analisten, er is geen facebook-botton, niets.
+      U kunt deze pagina sowieso gratis delen op facebook! :)
+      </p>''',
+    'title_wordlist': 'Welke woorden worden er gebruikt?',
+    'subtitle_wordlist': 'Kan ik de woordenlijsten downloaden?',
+    'text_wordlist':
+      '''<p>
+      De gebruikte woordenlijsten kunnen hier worden gedownload:
+      </p>''',
+    'reference_wordlist':
+      '''<p>
+      Deze woordenlijsten zijn ontleend aan het
+      <a href="http://wortschatz.uni-leipzig.de/html/wliste.html">Wortschatz-project</a>
+      van de Leipziguniversiteit in Duitsland.
+      Ze zijn onder
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</a>
+      in licentie volgens de
+      <a href="http://wortschatz.uni-leipzig.de/use.html">Wortschatz gebruiksvoorwaarden.</a>
+      Woorden die iets anders bevatten dan letters zijn uitgefilterd.
+      Ook zijn de lijsten omgezet naar volledige kleine letters.
+      </p>
+      <p>
+      U kunt deze bestanden gebruiken om uw wachtwoord lokaal te genereren.
+      Als u Linux gebruikt, kunt u gewoon het volgende commando aanroepen
+      (ter vervanging van &lt;file&gt; door het actuele bestand):
+      </p>''',
+    'option_numberwords': 'Aantal woorden',
+    'option_showspaces': 'Spaties tussen woorden tonen',
+    'options_need': 'Ik heb dat nodig:',
+    'options_uppercase': 'Bovenste hoofdletters',
+    'options_number': 'Ten minste één cijfer',
+    'options_specialcharacter': 'Ten minste één speciaal teken',
+    'translation_hint':
+      '''<p>
+      This pages has been translated automatically using the
+      <a href="https://www.deepl.com/translator">DeepL translator.</a>
+      If you find mistakes, do not hesitate to fix them in the
+      <a href="https://github.com/zgtm/correcthorse.org/blob/master/nl.py">Github repository.</a>
+      </p>''',
 }
 
