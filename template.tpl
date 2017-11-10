@@ -88,8 +88,14 @@
     </section>
 
 
+
     <section class="section">
       <div class="container">
+        % if currentsite != "compact.html" and defined("translation_hint"):
+        <div class="content">
+          {{! translation_hint }}
+        </div>
+        % end
         <h1 class="title">{{! title_your_password }}</h1>
         <h2 class="subtitle">{{! subtitle_generate_password }}</h2>
         <hr>
