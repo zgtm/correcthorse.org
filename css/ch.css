@@ -20,3 +20,9 @@ div.nav-center.nav-menu {
     padding-left:80px;
     padding-right:80px;
 }
+
+
+.section:last-of-type {
+  border-bottom: 1px solid #38b2e2;
+  padding-bottom: 80px;
+}
