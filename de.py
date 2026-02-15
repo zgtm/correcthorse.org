@@ -15,8 +15,8 @@ strings = {
     'subtitle_good_password': 'Was macht ein gutes Passwort aus?',
     'text_good_password':
       '''<p>
-      Das Passwort oben enthält 52 Bit Entropie. Das bedeutet, dass es so zufällig ist, wie das Ergebnis des Werfens von 52 Münzen nacheinander.
-      Das ist so, weil jedes Wort zufällig aus einer Liste von über 8192 verschiedenen Wörtern ausgewählt wurde – was einer Entropie von 13 Bits entspricht.
+      Das Passwort oben enthält über 51 Bit Entropie. Das bedeutet, dass es so zufällig ist, wie das Ergebnis des Werfens von 51 Münzen nacheinander.
+      Das ist so, weil jedes Wort zufällig aus einer Liste von 7450 verschiedenen Wörtern ausgewählt wurde – was einer Entropie von ungefähr 13 Bits entspricht.
       </p>
       <p>
       Das heißt, es ist so zufällig wie ein komplett zufälliges Passwort der Länge 8, das aus Großbuchstaben, Kleinbuchstaben und Zahlen generiert wird.

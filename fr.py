@@ -15,9 +15,9 @@ strings = {
     'subtitle_good_password': 'Qu\'est-ce qui fait un bon mot de passe?',
     'text_good_password':
       '''<p>
-      Le mot de passe ci-dessus contient 52 bits d'entropie.
-      Cela signifie que c'est aussi aléatoire que le résultat de jeter 52 pièces de monnaie dans une'rangée'.
-      La raison en est que chaque mot a été choisi au hasard à partir d'une liste de plus de 8192 mots distincts, ce qui correspond à une entropie de 13 bits.
+      Le mot de passe ci-dessus contient plus de 51 bits d'entropie.
+      Cela signifie que c'est aussi aléatoire que le résultat de jeter 51 pièces de monnaie dans une'rangée'.
+      La raison en est que chaque mot a été choisi au hasard à partir d'une liste de 7937 mots distincts, ce qui correspond à une entropie de approximatif 13 bits.
       </p>
       <p>
       Cela signifie qu'il est aussi aléatoire, comme un mot de passe de longueur 8 complètement aléatoire généré à partir de lettres majuscules, minuscules et chiffres.
