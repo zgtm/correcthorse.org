@@ -137,7 +137,11 @@
 
           var num = document.getElementById("numwords").value;
           for (var i = 0; i < num; i++) {
-              var word = wordlist[Math.floor(Math.random() * wordlist.length)];
+              var randomIndex = wordlist.length;
+              while (randomIndex >= wordlist.length) {
+                  randomIndex= crypto.getRandomValues(new Uint16Array(1))[0];
+              }
+              var word = wordlist[randomIndex];
               if (document.getElementById("upchar").checked)
                   word = word.charAt(0).toUpperCase() + word.slice(1);
               password += word;

@@ -88,7 +88,11 @@
           var password = "";
 
           for (var i = 0; i < 4; i++) {
-              password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
+              var randomIndex = wordlist.length;
+              while (randomIndex >= wordlist.length) {
+                  randomIndex= crypto.getRandomValues(new Uint16Array(1))[0];
+              }
+              password += wordlist[randomIndex] + " ";
           }
 
           document.getElementById("password").value = password.trim();

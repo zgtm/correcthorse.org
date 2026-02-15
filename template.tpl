@@ -207,7 +207,11 @@
 
         <span class="na">var</span> password = "";
         <span class="na">for</span> (<span class="na">var</span> i = 0; i &lt; 4; i++) {
-            password += wordlist[<span class="na">Math</span>.floor(<span class="na">Math</span>.random() * wordlist.length)] + " ";
+            <span class="na">var</span> randomIndex = wordlist.length;
+            <span class="na">while</span> (randomIndex >= wordlist.length) {
+                randomIndex= <span class="na">crypto</span>.getRandomValues(<span class="na">new</span> <span class="na">Uint16Array</span>(1))[0];
+            }
+            password += wordlist[randomIndex] + " ";
         }
 
         <span class="na">document</span>.getElementById("password").value = password.trim();
@@ -290,7 +294,11 @@
 
           var num = document.getElementById("numwords").value;
           for (var i = 0; i < num; i++) {
-              var word = wordlist[Math.floor(Math.random() * wordlist.length)];
+              var randomIndex = wordlist.length;
+              while (randomIndex >= wordlist.length) {
+                  randomIndex= crypto.getRandomValues(new Uint16Array(1))[0];
+              }
+              var word = wordlist[randomIndex];
               if (document.getElementById("upchar").checked)
                   word = word.charAt(0).toUpperCase() + word.slice(1);
               password += word;
@@ -319,7 +327,11 @@
           var password = "";
 
           for (var i = 0; i < 4; i++) {
-              password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
+              var randomIndex = wordlist.length;
+              while (randomIndex >= wordlist.length) {
+                  randomIndex= crypto.getRandomValues(new Uint16Array(1))[0];
+              }
+              password += wordlist[randomIndex] + " ";
           }
 
           document.getElementById("password").value = password.trim();
