@@ -1,13 +1,16 @@
-Wortlisten von http://wortschatz.uni-leipzig.de/html/wliste.html
+# correcthorse.org
+
+This repository contains everything needed to build the website running at https://correcthorse.org.
+
+### Word sources
+
+Word lists in words/orig/ are taken from http://wortschatz.uni-leipzig.de/html/wliste.html and converted to UTF-8.
 
  - http://wortschatz.uni-leipzig.de/Papers/top10000de.txt
  - http://wortschatz.uni-leipzig.de/Papers/top10000en.txt
  - http://wortschatz.uni-leipzig.de/Papers/top10000fr.txt
  - http://wortschatz.uni-leipzig.de/Papers/top10000nl.txt
 
-behandelt mit
+Unfortunately the original websites are no longer available. They can still be found in the web archive, though: https://web.archive.org/web/20170227200416/http://wortschatz.uni-leipzig.de/html/wliste.html
 
-    iconv -t UTF-8 -f ISO-8859-15 
-    # grep '^[^ 1-9]\{5\}[^ 1-9]*$' 
-    grep "^[^ 1-9\.\'-][^ 1-9A-Z\.\'-]\{3\}[^ 1-9A-Z\.\'-]*$"
-    tr '[A-ZÄÖÜ]' '[a-zäöü]'
+They are licensed as [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) as stated on http://wortschatz.uni-leipzig.de/use.html (https://web.archive.org/web/20161022231231/http://wortschatz.uni-leipzig.de/use.html).

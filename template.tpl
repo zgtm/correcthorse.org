@@ -234,22 +234,22 @@
         </div>
         <div class="columns">
           <div class="column">
-            <p>English: <a href="../words/english.txt">english.txt</a></p>
-            <p>8861 words</p><p>MD5: cdc20e6fe19c26fe44403d2e9f3c213c</p><p>SHA1: 4099869628b6b18ee52319db6588ec68f54d6a2b</p>
+            English: <a href="../words/english.txt">english.txt</a>
+            <p>8239 words</p><p>SHA256: 653feb8810030900e2ae28157cfb67d5fd818a40f966490202cb4b892201dfe0</p>
           </div>
           <div class="column">
             Deutsch / German: <a href="../words/german.txt">german.txt</a>
-            <p>9353 words</p><p>MD5: 089a7f1d15f54bfd574b7c0e3e735a9d</p><p>SHA1: 5aadf36486bbb5156aa3d0980a7d2786fcdde8f2</p>
+            <p>7450 words</p><p>SHA256: facbd5327d539236af52a1bb7c0b786444f2259cb54b08236c08cf2b75d806cf</p>
           </div>
         </div>
         <div class="columns">
           <div class="column">
             Français / French: <a href="../words/french.txt">french.txt</a>
-            <p>8377 words</p><p>MD5: 6f14bcbf6d62619f9ce4e0ba027e545b</p><p>SHA1: 87d292a813353a93c54ed0a9a0658170a802c0a2</p>
+            <p>7937 words</p><p>SHA256: 4b2ca906b0cc99b7913299cef5b34749db89ba42ee92ef86c6605efc2e5739bf</p>
           </div>
           <div class="column">
             Nederlands / Netherlands: <a href="../words/netherlands.txt">netherlands.txt</a>
-            <p>9192 words</p><p>MD5: b976733df4653155a506f07c9a54d6d6</p><p>SHA1: c5e60dbcc0dd51025418d8be3926c80d33f71226</p>
+            <p>8972 words</p><p>SHA256: b91cebd43bd96c9499cfc2f7a36ccb7fa2e8442b390f282125280cb73c63500c</p>
           </div>
         </div>
         <hr>
