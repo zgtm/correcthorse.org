@@ -179,7 +179,7 @@
             password += wordlist[<span class="na">Math</span>.floor(<span class="na">Math</span>.random() * wordlist.length)] + " ";
         }
 
-        <span class="na">document</span>.getElementById("password").value = password;
+        <span class="na">document</span>.getElementById("password").value = password.trim();
     }
 
     generatePassword();
@@ -275,7 +275,7 @@
               password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
           }
 
-          document.getElementById("password").value = password;
+          document.getElementById("password").value = password.trim();
       }
 
       generatePassword();

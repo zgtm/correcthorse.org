@@ -145,11 +145,14 @@
               if (document.getElementById("spaces").checked)
                   password += " ";
           }
-          if (document.getElementById("spchar").checked)
-              password += ".";
+
+          password = password.trim()
 
           if (document.getElementById("number").checked)
               password += "0";
+
+          if (document.getElementById("spchar").checked)
+              password += ".";
 
           document.getElementById("password").value = password;
       }

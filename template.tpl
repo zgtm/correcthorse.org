@@ -210,7 +210,7 @@
             password += wordlist[<span class="na">Math</span>.floor(<span class="na">Math</span>.random() * wordlist.length)] + " ";
         }
 
-        <span class="na">document</span>.getElementById("password").value = password;
+        <span class="na">document</span>.getElementById("password").value = password.trim();
     }
 
     generatePassword();
@@ -297,11 +297,14 @@
               if (document.getElementById("spaces").checked)
                   password += " ";
           }
-          if (document.getElementById("spchar").checked)
-              password += ".";
+
+          password = password.trim()
 
           if (document.getElementById("number").checked)
               password += "0";
+
+          if (document.getElementById("spchar").checked)
+              password += ".";
 
           document.getElementById("password").value = password;
       }
@@ -319,7 +322,7 @@
               password += wordlist[Math.floor(Math.random() * wordlist.length)] + " ";
           }
 
-          document.getElementById("password").value = password;
+          document.getElementById("password").value = password.trim();
       }
 
       generatePassword();
