@@ -2,6 +2,7 @@
 <html lang="{{! lang }}">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=740">
     <title>CorrectHorse.org – {{! title }}</title>
     <link rel="stylesheet" href="../css/bulma.css">
     <link rel="stylesheet" href="../css/ch.css">
@@ -100,7 +101,7 @@
         <h2 class="subtitle">{{! subtitle_generate_password }}</h2>
         <hr>
         <div class="columns">
-          <div class="column">
+          <div class="column is-8">
             <p class="control">
                <button class="button is-primary is-medium" onclick="generatePassword();">{{! generate }}</button>
             </p>
@@ -113,7 +114,7 @@
             </p>
             % end
           </div>
-          <div class="column">
+          <div class="column is-4">
             <p>{{! generator_words }}</p>
             <p class="control">
               <textarea class="textarea" placeholder="" id="wordlist">{{! wordlist }}</textarea>
@@ -169,13 +170,13 @@
         <hr>
         <div class="content">
           {{! text_good_password }}
-          <div class="container" style="width:780px; margin-top:20px; margin-bottom:20px;">
+          <div class="container" style="width: 100%; max-width:780px; margin-top:20px; margin-bottom:20px;">
             <div class="box" >
               <article class="media">
                 <div class="media-content">
                   <figure class="image">
                     <a href="https://xkcd.com/936/">
-                      <img src="../img/password_strength.png" style="width:740px;">
+                      <img src="../img/password_strength.png" style="width: 100%; max-width:740px;">
                     </a>
                   </figure>
                 </div>
